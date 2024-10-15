@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div{
+    display: block;
+    unicode-bidi: isolate;
+}
+@media (max-width:540px)  {
+    .about-area {
+        padding: 150px 0 153px;
+        margin-top: 0;
+        text-align: center;
+        /* margin-left: 15px; */
+    }
+} 
+.about-area{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(121, 119, 119, 0.1),#060606),url(Background\ image.png);
+    background-position: center;
+    background-size: cover;
+    padding: 0 6%;
+    /* border-radius: 0% 0% 0% 80% ; */
+}
+/* @media (min-width: 800px) {
+    .container {
+        max-width: 600px;
+    }
+} */
+
+.about-area-content h4{
+    color: aliceblue;
+    font-family: "Rajdhani",sans-serif;
+    font-size: 50px;
+    padding-top: 19%;
+    /* text-align: end; */
+
+}
+.about-area-content ul{
+    /* border: 1px solid #fff; */
+    display: inline-block;
+    /* border-radius: 5px; */
+    padding: 8px 33px;
+    margin-top: 10px;
+    text-align: center;
+    margin: 30px;
+}
+.about-area-content ul:hover{
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 6px 15px 0px;
+    transform: translate(-5px);
+    
+}
+.about-area-content ul li{
+    display: inline-block;
+    color: aliceblue;
+    font-size: 20px;
+    font-family: "Rajdhani";
+    font-weight: 600;
+}
+
