@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 50vh;
+    background: linear-gradient(rgba(0,0,0,0.7),#0b0b0b),url(Sliders.jpg);
+    /* background-image: url(images-counter.jpg); */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 8% ;
+    margin-top: 6%;
+}
+
+.container .counters {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.counters .counter{
+    width: 240px;
+    /* background-color: #fff; */
+    color: black;
+    padding: 40px 25px;
+    margin: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+}
+.counters .counter:hover{
+      box-shadow: rgba(220, 219, 230, 0.8) 0px 6px 15px 0px;
+      transform: translateY(-5px);
+}
+.counters .counter .number{
+       font-size: 40px;
+       font-weight: 800;
+       color: #2760dc;
+}
+.counters .counter .details{
+    font-size: 18px;
+    font-weight: 700;
+    color: #e04c1a;
+}
+@media (max-width:540px){
+    .counters .counter{
+        width: 80%;
+    }
+}
