@@ -1,0 +1,219 @@
+
+* ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* css for background color */
+.style-1.team-member {
+    background: url(black.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 60px 0 220px;
+}
+
+/*css for heading  */
+.style-1.team-member .section-title {
+    margin-bottom: 48px;
+}
+
+.style-1.section-title h4 {
+    font-size: 18px;
+    color:  #7436d2;
+    font-weight: 600;
+    margin: 0 0 30px;
+    text-align: center ;
+   
+}
+.style-1.section-title h1 {
+    font-size: 42px;
+    color: #e7eaee;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+   
+}
+
+ .style-2.toptech-button {
+    text-align: right;
+    margin-top: 90px;
+    
+} 
+
+.style-2.toptech-button a {
+    padding: 5px 15px 5px 15px;
+    font-family: 'Rajdhani';
+    font-weight: 600;
+    color: #fff;
+    background:  #7436d2;
+    display: inline-block;
+    border-radius: 4px;
+    border: 2px solid black;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-size: 17px;
+    margin-top: 6px;
+    transition: 0.5s;
+    text-decoration: none;    
+}
+
+.style-2.toptech-button i {
+    position: relative;
+    background:var(--first-color-light);
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: 400;
+    /* text-transform: uppercase; */
+    display: block;
+    color: var(--first-color);
+    cursor: pointer;
+    box-shadow:0 0 4px rgba(207, 204, 204, 0.5) ;
+    /* transition: all 0.3s ease ; */
+    left: 45px;
+}  
+
+/* css for content box */
+.style-1 .single-team-box {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.style-1 .team-content {
+    position: relative;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 24px 0 75px;
+    border-radius: 4px;
+    /* clip-path: ellipse(0 0, 100% 0%, 100% 100%, 50% 78%, 0 100%); */
+    box-shadow: inset 0 0 0 0 #7436d2;
+    transition: ease-out 0.5s;
+    height: 139px;
+
+}
+.style-1 .single-team-box:hover .team-content {
+    background-color: #ffffff;
+    margin-top: -55px;
+    height: 193px;
+    box-shadow: inset 310px 0 0 0 #7436d2;
+    /* transform: translateY(10px); */
+    /* border-radius: 50%; */
+    
+}
+.style-1 .team-content h4 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 4px;
+    transition: 0.5s;
+    color:black
+}
+.style-1 .single-team-box:hover .team-content p,
+.style-1 .single-team-box:hover .team-content h4{
+    color:#fff;
+}
+
+.style-1 .team-content p {
+    margin: 2px 0 0;
+    color: #103ed8;
+}
+
+/* //css for social icons// */
+:root{
+    --first-color:#673AB7;
+    --first-color-light:#fff;
+    --facebook:#3912d6;
+    --twitter:#1da1f2;
+    --instagram:#e1306c;
+    --pinterest-p:#da4434;
+}
+.mainbox{
+    position: absolute;
+    left:55%;
+    transform: translate(-60px,-30px);
+}
+label{
+    position: relative;
+    background:var(--first-color-light);
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: block;
+    color: var(--first-color);
+    cursor: pointer;
+    box-shadow:0 0 4px rgb(0,0,0,0.5) ;
+    transition: all 0.3s ease ;
+}
+#check{
+    display: none;
+}
+.media-icons  {
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--first-color-light);
+    width: 220%;
+    height:90%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 35px;
+    padding: 2px;
+    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: 0 0 4px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
+}
+#check:checked ~ .media-icons{
+     opacity: 1;
+     pointer-events: auto;
+     top: -84px;
+}
+.media-icons::before{
+    content: '';
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 50%;
+    background: var(--first-color-light);
+    bottom: -9px;
+    transform: translateX(-50%) rotate(45deg);
+}
+.media-icons a{
+    font-size: 25px;
+    color: var(--first-color);
+    transition: all 0.3s ease;
+}
+.media-icons a:hover{
+    transform: translateY(-2px);
+}
+.media-icons a:nth-child(1):hover{
+    color: var(--facebook);
+}
+.media-icons a:nth-child(2):hover{
+    color: var(--twitter);
+}
+.media-icons a:nth-child(3):hover{
+    color: var(--instagram);
+}
+.media-icons a:nth-child(4):hover{
+    color: var(--pinterest-p);
+}
+
+
+
+
